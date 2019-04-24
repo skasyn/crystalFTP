@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.28.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/LeChatErrant/crystalFTP">
+  <title>User::UserData - github.com/LeChatErrant/crystalFTP</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/toplevel" data-name="top level namespace">
+      <a href="../toplevel.html">Top Level Namespace</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/Commands" data-name="commands">
+      <a href="../Commands.html">Commands</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/Config" data-name="config">
+      <a href="../Config.html">Config</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/LeChatErrant/crystalFTP/CrystalFTP" data-name="crystalftp">
+      <a href="../CrystalFTP.html">CrystalFTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/CrystalFTP/FTPServer" data-name="crystalftp::ftpserver">
+      <a href="../CrystalFTP/FTPServer.html">FTPServer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/LeChatErrant/crystalFTP/User" data-name="user">
+      <a href="../User.html">User</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/LeChatErrant/crystalFTP/User/UserData" data-name="user::userdata">
+      <a href="../User/UserData.html">UserData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> User::UserData
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../User/UserData.html">User::UserData</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L4" target="_blank">
+        User.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28socket%2Croot%29-class-method" class="signature"><strong>.new</strong>(socket, root)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#data_socket%3ATCPSocket%3F-instance-method" class="signature"><strong>#data_socket</strong> : TCPSocket?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#data_socket%3D%28data_socket%3ATCPSocket%3F%29-instance-method" class="signature"><strong>#data_socket=</strong>(data_socket : TCPSocket?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_activ%3ABool-instance-method" class="signature"><strong>#is_activ</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_activ%3D%28is_activ%29-instance-method" class="signature"><strong>#is_activ=</strong>(is_activ)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_authentified%3ABool-instance-method" class="signature"><strong>#is_authentified</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_authentified%3D%28is_authentified%29-instance-method" class="signature"><strong>#is_authentified=</strong>(is_authentified)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#root%3AString-instance-method" class="signature"><strong>#root</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#server%3ATCPServer%3F-instance-method" class="signature"><strong>#server</strong> : TCPServer?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#server%3D%28server%3ATCPServer%3F%29-instance-method" class="signature"><strong>#server=</strong>(server : TCPServer?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#socket%3ATCPSocket-instance-method" class="signature"><strong>#socket</strong> : TCPSocket</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#socket%3D%28socket%3ATCPSocket%29-instance-method" class="signature"><strong>#socket=</strong>(socket : TCPSocket)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#username%3AString%3F-instance-method" class="signature"><strong>#username</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#username%3D%28username%29-instance-method" class="signature"><strong>#username=</strong>(username)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#working_directory%3AString-instance-method" class="signature"><strong>#working_directory</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#working_directory%3D%28working_directory%3AString%29-instance-method" class="signature"><strong>#working_directory=</strong>(working_directory : String)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(socket,root)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(socket, root)
+
+        <a class="method-permalink" href="#new%28socket%2Croot%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="data_socket:TCPSocket?-instance-method">
+      <div class="signature">
+        
+        def <strong>data_socket</strong> : TCPSocket?
+
+        <a class="method-permalink" href="#data_socket%3ATCPSocket%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="data_socket=(data_socket:TCPSocket?)-instance-method">
+      <div class="signature">
+        
+        def <strong>data_socket=</strong>(data_socket : TCPSocket?)
+
+        <a class="method-permalink" href="#data_socket%3D%28data_socket%3ATCPSocket%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_activ:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>is_activ</strong> : Bool
+
+        <a class="method-permalink" href="#is_activ%3ABool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_activ=(is_activ)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_activ=</strong>(is_activ)
+
+        <a class="method-permalink" href="#is_activ%3D%28is_activ%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_authentified:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>is_authentified</strong> : Bool
+
+        <a class="method-permalink" href="#is_authentified%3ABool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_authentified=(is_authentified)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_authentified=</strong>(is_authentified)
+
+        <a class="method-permalink" href="#is_authentified%3D%28is_authentified%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="root:String-instance-method">
+      <div class="signature">
+        
+        def <strong>root</strong> : String
+
+        <a class="method-permalink" href="#root%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="server:TCPServer?-instance-method">
+      <div class="signature">
+        
+        def <strong>server</strong> : TCPServer?
+
+        <a class="method-permalink" href="#server%3ATCPServer%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L9" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="server=(server:TCPServer?)-instance-method">
+      <div class="signature">
+        
+        def <strong>server=</strong>(server : TCPServer?)
+
+        <a class="method-permalink" href="#server%3D%28server%3ATCPServer%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="socket:TCPSocket-instance-method">
+      <div class="signature">
+        
+        def <strong>socket</strong> : TCPSocket
+
+        <a class="method-permalink" href="#socket%3ATCPSocket-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="socket=(socket:TCPSocket)-instance-method">
+      <div class="signature">
+        
+        def <strong>socket=</strong>(socket : TCPSocket)
+
+        <a class="method-permalink" href="#socket%3D%28socket%3ATCPSocket%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="username:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>username</strong> : String?
+
+        <a class="method-permalink" href="#username%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="username=(username)-instance-method">
+      <div class="signature">
+        
+        def <strong>username=</strong>(username)
+
+        <a class="method-permalink" href="#username%3D%28username%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="working_directory:String-instance-method">
+      <div class="signature">
+        
+        def <strong>working_directory</strong> : String
+
+        <a class="method-permalink" href="#working_directory%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="working_directory=(working_directory:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>working_directory=</strong>(working_directory : String)
+
+        <a class="method-permalink" href="#working_directory%3D%28working_directory%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/User.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

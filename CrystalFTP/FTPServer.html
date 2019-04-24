@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.28.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/LeChatErrant/crystalFTP">
+  <title>CrystalFTP::FTPServer - github.com/LeChatErrant/crystalFTP</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/toplevel" data-name="top level namespace">
+      <a href="../toplevel.html">Top Level Namespace</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/Commands" data-name="commands">
+      <a href="../Commands.html">Commands</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/Config" data-name="config">
+      <a href="../Config.html">Config</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/LeChatErrant/crystalFTP/CrystalFTP" data-name="crystalftp">
+      <a href="../CrystalFTP.html">CrystalFTP</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/LeChatErrant/crystalFTP/CrystalFTP/FTPServer" data-name="crystalftp::ftpserver">
+      <a href="../CrystalFTP/FTPServer.html">FTPServer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/LeChatErrant/crystalFTP/User" data-name="user">
+      <a href="../User.html">User</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/LeChatErrant/crystalFTP/User/UserData" data-name="user::userdata">
+      <a href="../User/UserData.html">UserData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> CrystalFTP::FTPServer
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../CrystalFTP/FTPServer.html">CrystalFTP::FTPServer</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../Commands.html">Commands</a></li>
+  
+    <li class="other-type"><a href="../Config.html">Config</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/crystalFTP.cr#L10" target="_blank">
+        crystalFTP.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28port%3DFTPServer%3A%3ADEFAULT_PORT%2Croot%3DFTPServer%3A%3ADEFAULT_ROOT%29-class-method" class="signature"><strong>.new</strong>(port = <span class="t">FTPServer</span><span class="t">::</span><span class="t">DEFAULT_PORT</span>, root = <span class="t">FTPServer</span><span class="t">::</span><span class="t">DEFAULT_ROOT</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#reply%28socket%2Ccode%2Cmessage%29-class-method" class="signature"><strong>.reply</strong>(socket, code, message)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#port%3AInt32-instance-method" class="signature"><strong>#port</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#root%3AString-instance-method" class="signature"><strong>#root</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#start-instance-method" class="signature"><strong>#start</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(port=FTPServer::DEFAULT_PORT,root=FTPServer::DEFAULT_ROOT)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(port = <span class="t">FTPServer</span><span class="t">::</span><span class="t">DEFAULT_PORT</span>, root = <span class="t">FTPServer</span><span class="t">::</span><span class="t">DEFAULT_ROOT</span>)
+
+        <a class="method-permalink" href="#new%28port%3DFTPServer%3A%3ADEFAULT_PORT%2Croot%3DFTPServer%3A%3ADEFAULT_ROOT%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/crystalFTP.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="reply(socket,code,message)-class-method">
+      <div class="signature">
+        
+        def self.<strong>reply</strong>(socket, code, message)
+
+        <a class="method-permalink" href="#reply%28socket%2Ccode%2Cmessage%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/crystalFTP.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="port:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>port</strong> : Int32
+
+        <a class="method-permalink" href="#port%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/crystalFTP.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="root:String-instance-method">
+      <div class="signature">
+        
+        def <strong>root</strong> : String
+
+        <a class="method-permalink" href="#root%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/crystalFTP.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="start-instance-method">
+      <div class="signature">
+        
+        def <strong>start</strong>
+
+        <a class="method-permalink" href="#start-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/LeChatErrant/crystalFTP/blob/616ee8da39bbe963f8db9105c0e729163cbfa2fe/src/crystalFTP.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
